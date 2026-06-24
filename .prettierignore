@@ -1,5 +1,5 @@
 # Lockfiles
 pnpm-lock.yaml
 
-# Extensions manage their own formatting via `ray lint`.
-extensions/
+# Auto-generated
+**/raycast-env.d.ts

@@ -13,11 +13,13 @@ A monorepo of [Raycast](https://www.raycast.com/) extensions.
 
 This is a [pnpm](https://pnpm.io/) workspace. Shared dependency versions are
 managed via the [catalog](https://pnpm.io/catalogs) in `pnpm-workspace.yaml`.
+Linting and formatting are configured once at the repo root and run across every
+extension.
 
 ```sh
 pnpm install            # install all dependencies
 pnpm -F box-drawing dev # develop a single extension
-pnpm -r build           # build every extension
-pnpm -r lint            # lint every extension
+pnpm build              # build every extension
+pnpm lint               # lint the whole repo
 pnpm format             # format the whole repo with Prettier
 ```

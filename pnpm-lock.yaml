@@ -32,31 +32,53 @@ importers:
 
   .:
     devDependencies:
+      '@raycast/eslint-config':
+        specifier: 'catalog:'
+        version: 2.1.1(eslint@9.39.4)(prettier@3.8.4)(typescript@5.9.3)
+      eslint:
+        specifier: 'catalog:'
+        version: 9.39.4
       prettier:
         specifier: ^3.5.3
         version: 3.8.4
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
 
   extensions/box-drawing:
     dependencies:
       '@raycast/api':
         specifier: 'catalog:'
-        version: 1.104.19(@types/node@22.13.10)(@types/react@19.0.10)
+        version: 1.104.19(@types/node@22.13.10)(@types/react@19.0.10)(supports-color@8.1.1)
       '@raycast/utils':
         specifier: 'catalog:'
         version: 1.19.1(@raycast/api@1.104.19(@types/node@22.13.10)(@types/react@19.0.10))
     devDependencies:
-      '@raycast/eslint-config':
-        specifier: 'catalog:'
-        version: 2.1.1(eslint@9.39.4)(prettier@3.8.4)(typescript@5.9.3)
       '@types/node':
         specifier: 'catalog:'
         version: 22.13.10
       '@types/react':
         specifier: 'catalog:'
         version: 19.0.10
-      eslint:
+      typescript:
         specifier: 'catalog:'
-        version: 9.39.4
+        version: 5.9.3
+
+  extensions/catppuccin:
+    dependencies:
+      '@raycast/api':
+        specifier: 'catalog:'
+        version: 1.104.19(@types/node@22.13.10)(@types/react@19.0.10)(supports-color@8.1.1)
+      '@raycast/utils':
+        specifier: 'catalog:'
+        version: 1.19.1(@raycast/api@1.104.19(@types/node@22.13.10)(@types/react@19.0.10))
+    devDependencies:
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.13.10
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.0.10
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -1355,7 +1377,7 @@ snapshots:
       wordwrap: 1.0.0
       wrap-ansi: 7.0.0
 
-  '@oclif/plugin-autocomplete@3.2.50':
+  '@oclif/plugin-autocomplete@3.2.50(supports-color@8.1.1)':
     dependencies:
       '@oclif/core': 4.11.7
       ansis: 3.17.0
@@ -1377,10 +1399,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@raycast/api@1.104.19(@types/node@22.13.10)(@types/react@19.0.10)':
+  '@raycast/api@1.104.19(@types/node@22.13.10)(@types/react@19.0.10)(supports-color@8.1.1)':
     dependencies:
       '@oclif/core': 4.11.7
-      '@oclif/plugin-autocomplete': 3.2.50
+      '@oclif/plugin-autocomplete': 3.2.50(supports-color@8.1.1)
       '@oclif/plugin-help': 6.2.50
       '@oclif/plugin-not-found': 3.2.87(@types/node@22.13.10)
       esbuild: 0.27.7
@@ -1414,7 +1436,7 @@ snapshots:
 
   '@raycast/utils@1.19.1(@raycast/api@1.104.19(@types/node@22.13.10)(@types/react@19.0.10))':
     dependencies:
-      '@raycast/api': 1.104.19(@types/node@22.13.10)(@types/react@19.0.10)
+      '@raycast/api': 1.104.19(@types/node@22.13.10)(@types/react@19.0.10)(supports-color@8.1.1)
       cross-fetch: 3.2.0
       dequal: 2.0.3
       object-hash: 3.0.0

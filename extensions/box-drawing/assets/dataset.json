@@ -27,9 +27,7 @@
     },
     {
       "title": "Cross",
-      "items": [
-        { "shape": "┼", "name": "vert. & horz." }
-      ]
+      "items": [{ "shape": "┼", "name": "vert. & horz." }]
     }
   ],
   "heavy": [
@@ -60,9 +58,7 @@
     },
     {
       "title": "Cross",
-      "items": [
-        { "shape": "╋", "name": "vert. & horz." }
-      ]
+      "items": [{ "shape": "╋", "name": "vert. & horz." }]
     }
   ],
   "double": [
@@ -93,9 +89,7 @@
     },
     {
       "title": "Cross",
-      "items": [
-        { "shape": "╬", "name": "vert. & horz." }
-      ]
+      "items": [{ "shape": "╬", "name": "vert. & horz." }]
     }
   ]
 }

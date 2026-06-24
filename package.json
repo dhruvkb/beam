@@ -7,13 +7,16 @@
   "packageManager": "pnpm@11.5.2",
   "scripts": {
     "build": "pnpm -r build",
-    "lint": "pnpm -r lint",
-    "fix-lint": "pnpm -r fix-lint",
-    "dev": "pnpm -F box-drawing dev",
+    "dev": "pnpm -r dev",
+    "lint": "eslint .",
+    "fix-lint": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
   "devDependencies": {
-    "prettier": "^3.5.3"
+    "@raycast/eslint-config": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "^3.5.3",
+    "typescript": "catalog:"
   }
 }

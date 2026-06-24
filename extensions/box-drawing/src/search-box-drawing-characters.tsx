@@ -54,7 +54,7 @@ export default function Command() {
       }
     >
       {!isLoading &&
-        (dataset as Dataset)[weight].map((section) => (
+        (dataset as Dataset)[weight]?.map((section) => (
           <Grid.Section key={section.title} title={section.title} aspectRatio="1" fit={Grid.Fit.Fill}>
             {section.items.map((item) => (
               <GridItem key={item.shape} item={item} />

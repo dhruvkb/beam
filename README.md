@@ -23,3 +23,24 @@ pnpm build              # build every extension
 pnpm lint               # lint the whole repo
 pnpm format             # format the whole repo with Prettier
 ```
+
+Each extension lives in its own directory under `extensions/`. To work on one,
+run `pnpm -F <name> dev` (where `<name>` is the extension's `package.json`
+name). This starts `ray develop`, which builds the extension, loads it into
+Raycast, and live-reloads on every change. Leave it running while iterating.
+
+A new extension just needs a directory under `extensions/`; it picks up the
+root linting, formatting, and shared dependency versions automatically.
+
+## Loading into Raycast
+
+These extensions are never published to the Raycast store — they run as local
+**development** extensions. `pnpm -F <name> dev` registers an extension with
+Raycast, and that registration **persists after the watcher is stopped**, so a
+single run is enough to keep a command available. Two things to remember:
+
+- Raycast must be running, and the registration points at this repo on disk
+  (`~/Developer/dhruvkb/beam`), so don't move or delete the clone.
+- On a fresh machine, `~/dotfiles/bootstrap/raycast.zsh` clones this repo to
+  that location and loads every extension automatically, so there's usually
+  nothing to do by hand.

@@ -21,6 +21,10 @@ function GridItem({ item }: { item: Color }) {
           <Action.CopyToClipboard title="Copy HSL" content={hsl} />
           <Action.CopyToClipboard title="Copy OKLCH" content={oklch} />
           <Action.OpenInBrowser title="Catppuccin Palette" url="https://catppuccin.com/palette/" />
+          <Action.OpenInBrowser
+            title="Catppuccin Style Guide"
+            url="https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md"
+          />
         </ActionPanel>
       }
     />
